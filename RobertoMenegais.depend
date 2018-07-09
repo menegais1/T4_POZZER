@@ -1,0 +1,108 @@
+# depslib dependency file v1.0
+1531103340 source:c:\users\denic\desktop\robertomenegais\src\basic.cpp
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"mpc_c.h"
+	"basic.h"
+	"listBox.h"
+	"bus.h"
+
+1293057508 c:\users\denic\desktop\robertomenegais\include\mpc_c.h
+	<GL/glut.h>
+	"definitions.h"
+
+924731306 c:\users\denic\desktop\robertomenegais\include\gl\glut.h
+	<windows.h>
+	<GL/gl.h>
+	<GL/glu.h>
+
+1107059720 c:\users\denic\desktop\robertomenegais\include\gl\gl.h
+
+1107059720 c:\users\denic\desktop\robertomenegais\include\gl\glu.h
+	<stddef.h>
+	<GL/gl.h>
+
+1322679380 c:\users\denic\desktop\robertomenegais\include\definitions.h
+
+1531103378 c:\users\denic\desktop\robertomenegais\src\basic.h
+	<string>
+
+1531021726 source:c:\users\denic\desktop\robertomenegais\src\main.cpp
+	"mpc_c.h"
+	"basic.h"
+
+1531101488 c:\users\denic\desktop\robertomenegais\src\listbox.h
+	"helpers.h"
+	"bus.h"
+
+1531102540 source:c:\users\denic\desktop\robertomenegais\src\listbox.cpp
+	"mpc_c.h"
+	"listBox.h"
+	"helpers.h"
+	<stdio.h>
+	<string.h>
+
+1531095431 source:c:\users\denic\desktop\robertomenegais\src\helpers.cpp
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	"mpc_c.h"
+	"helpers.h"
+
+1531087887 source:c:\users\denic\desktop\robertomenegais\src\bus.c
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	"helpers.h"
+	"bus.h"
+
+1531100624 c:\users\denic\desktop\robertomenegais\src\helpers.h
+
+1531103774 c:\users\denic\desktop\robertomenegais\src\bus.h
+	"schedule.h"
+	"helpers.h"
+
+1531086305 c:\users\denic\desktop\robertomenegais\src\schedule.h
+	"seat.h"
+	"helpers.h"
+
+1531086346 c:\users\denic\desktop\robertomenegais\src\seat.h
+	"helpers.h"
+
+1531087582 source:c:\users\denic\desktop\robertomenegais\src\schedule.c
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	"helpers.h"
+	"schedule.h"
+
+1531087620 source:c:\users\denic\desktop\robertomenegais\src\seat.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"seat.h"
+	"helpers.h"
+
+1531103157 source:c:\users\denic\desktop\robertomenegais\src\bus.cpp
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	"helpers.h"
+	"bus.h"
+	"mpc_c.h"
+
+1531088120 source:c:\users\denic\desktop\robertomenegais\src\schedule.cpp
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	"helpers.h"
+	"schedule.h"
+
+1531088130 source:c:\users\denic\desktop\robertomenegais\src\seat.cpp
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"seat.h"
+	"helpers.h"
+
