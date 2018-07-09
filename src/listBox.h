@@ -14,6 +14,12 @@
 #define CONTENT_DESLOCATION_COL 1
 #define TITLE_SIZE 1
 
+
+#define SCHEDULE_LIST_BOX_START_LIN 10
+#define SCHEDULE_LIST_BOX_START_COL 16
+#define SCHEDULE_LIST_BOX_END_LIN 25
+#define SCHEDULE_LIST_BOX_END_COL 32
+
 #include "helpers.h"
 #include "bus.h"
 
@@ -47,6 +53,6 @@ void listBoxScroll(ListBox *listBox, char up);
 
 void fillListBox(ListBox *listBox);
 
-void detectMouseClick(ListBox *listBox, int lin, int col);
+void detectMouseClickListBox(ListBox *listBox, int lin, int col);
 
 #endif // LIST_BOX_H

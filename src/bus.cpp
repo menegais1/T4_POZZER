@@ -6,6 +6,7 @@
 
 #include "helpers.h"
 #include "bus.h"
+#include "schedule.h"
 #include "mpc_c.h"
 
 Bus* initBusList(){

@@ -25,6 +25,7 @@ void drawListBoxInterior(ListBox *listBox, int r, int g, int b)
     xPaddingLeft = colToX(listBox->colPadding);
     xPaddingRight = colToX(listBox->colPadding + listBox->scrollSize + listBox->scrollDeslocCol);
 
+    clearScreen(listBox->startPosition, listBox->endPosition);
     mpcVLine(startX, startY, endY, r, g, b, 1);
     mpcVLine(endX, startY, endY, r, g, b, 1);
     mpcHLine(startY, startX, endX, r, g, b, 1);
@@ -50,7 +51,7 @@ void drawScrollBar(ListBox *listBox)
     }
 }
 
-void detectMouseClick(ListBox *listBox, int lin, int col)
+void detectMouseClickListBox(ListBox *listBox, int lin, int col)
 {
 
     if (lin == listBox->upScroll.lin &&

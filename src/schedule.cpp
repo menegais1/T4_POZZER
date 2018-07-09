@@ -32,7 +32,7 @@ Schedule initSchedule(){
     return schedule;
 }
 
-addPreExistentSchedules(Schedule scheduleList[], int* length){
+int addPreExistentSchedules(Schedule scheduleList[], int* length){
     char hour1[HOUR_SIZE] = "12:30";
     char hour2[HOUR_SIZE] = "14:45";
     char hour3[HOUR_SIZE] = "22:00";
