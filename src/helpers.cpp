@@ -28,32 +28,6 @@ int colToX(int col){
 }
 
 
-Window initWindow(Position startPosition, Position endPosition){
-    Window window;
-    window.startPosition = startPosition;
-    window.endPosition = endPosition;
-    window.status = INACTIVE;
-    return window;
-}
-
-void drawWindow(Window *window, int r, int g, int b){
-
-    int startX, endX, startY, endY;
-    startX = colToX(window->startPosition.col);
-    endX = colToX(window->endPosition.col);
-    startY = linToY(window->startPosition.lin);
-    endY = linToY(window->endPosition.lin);
-
-    clearScreen(window);
-
-    mpcVLine(startX , startY, endY, r, g, b, 1);
-    mpcVLine(endX , startY, endY, r, g, b, 1);
-    mpcHLine(startY, startX, endX, r, g, b, 1);
-    mpcHLine(endY, startX, endX, r, g, b, 1);
-
-
-}
-
 
 void clearScreen(){
     int i, j;
@@ -66,17 +40,6 @@ void clearScreen(){
     }
 }
 
-
-void clearScreen(Window *window){
-     int i, j;
-    for (i = window->startPosition.lin; i <  window->endPosition.lin; i++)
-    {
-        for (j =  window->startPosition.col; j <  window->endPosition.col; j++)
-        {
-            mpcSetChar(i, j, ' ', F_STD, WHITE, TRANSP, 1);
-        }
-   }
-}
 
 void clearScreen(Position startPosition, Position endPosition){
      int i, j;

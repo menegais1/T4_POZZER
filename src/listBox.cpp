@@ -84,7 +84,7 @@ void listBoxScroll(ListBox *listBox, char up)
     {
         if (listBox->scrollOffset > 0){
             listBox->scrollOffset--;
-            if(listBox->currentItemIndex > listBox->scrollOffset + listBox->maxItens - 1){
+            if(listBox->currentItemIndex > listBox->scrollOffset + listBox->maxItens - 1 && listBox->currentItemIndex != -1){
                 listBox->currentItemIndex = listBox->scrollOffset + listBox->maxItens - 1;
             }
         }
@@ -93,7 +93,7 @@ void listBoxScroll(ListBox *listBox, char up)
     {
         if (listBox->scrollOffset + listBox->maxItens < listBox->listLength){
             listBox->scrollOffset++;
-            if(listBox->currentItemIndex <= listBox->scrollOffset){
+            if(listBox->currentItemIndex <= listBox->scrollOffset && listBox->currentItemIndex != -1){
                 listBox->currentItemIndex = listBox->scrollOffset;
             }
         }

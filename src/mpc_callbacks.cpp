@@ -11,6 +11,7 @@
 
 Window g_mainWindow;
 Window g_schedulesWindow;
+Window g_seatsWindow;
 
 ListBox g_busListBox;
 ListBox g_scheduleListBox;
@@ -37,6 +38,11 @@ void displayApp(void) {
     if (g_schedulesWindow.status == ACTIVE) {
         drawScheduleWindow(&g_schedulesWindow, &g_scheduleListBox);
     }
+    if (g_seatsWindow.status == ACTIVE) {
+        drawSeatsWindow(&g_seatsWindow,
+                        g_busList[g_busListBox.currentItemIndex].schedules[g_scheduleListBox.currentItemIndex].seats,
+                        SEATS_SIZE);
+    }
 
 }
 
@@ -46,6 +52,7 @@ void leftButtonClick(int lin, int col) {
         detectMouseClickListBox(&g_scheduleListBox, lin, col);
         if (detectCloseButtonClick(&g_schedulesWindow, lin, col) == 1) {
             g_schedulesWindow.status = INACTIVE;
+            g_seatsWindow.status = INACTIVE;
             g_busListBox.currentItemIndex = -1;
         }
     } else {
@@ -53,6 +60,13 @@ void leftButtonClick(int lin, int col) {
         if (detectCloseButtonClick(&g_mainWindow, lin, col) == 1) {
             exit(0);
             return;
+        }
+    }
+
+    if (g_seatsWindow.status == ACTIVE) {
+        if (detectCloseButtonClick(&g_seatsWindow, lin, col) == 1) {
+            g_seatsWindow.status = INACTIVE;
+            g_scheduleListBox.currentItemIndex = -1;
         }
     }
 
@@ -85,8 +99,15 @@ void cbUpdate(void) {
     if (g_busListBox.currentItemIndex != -1 && g_schedulesWindow.status == INACTIVE) {
         initScheduleWindow(&g_schedulesWindow,
                            &g_scheduleListBox, g_busList[g_busListBox.currentItemIndex].schedules,
-                           &g_busList[g_busListBox.currentItemIndex].schedules_length);
+                           g_busList[g_busListBox.currentItemIndex].schedules_length);
         g_schedulesWindow.status = ACTIVE;
+    }
+
+    if (g_scheduleListBox.currentItemIndex != -1 && g_schedulesWindow.status == ACTIVE) {
+        initSeatsWindow(&g_seatsWindow,
+                        g_busList[g_busListBox.currentItemIndex].schedules[g_scheduleListBox.currentItemIndex].seats,
+                        SEATS_SIZE);
+        g_seatsWindow.status = ACTIVE;
     }
 
     displayApp();

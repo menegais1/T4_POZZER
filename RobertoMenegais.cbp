@@ -92,6 +92,8 @@
 		<Unit filename="src/schedule.h" />
 		<Unit filename="src/seat.cpp" />
 		<Unit filename="src/seat.h" />
+		<Unit filename="src/window.cpp" />
+		<Unit filename="src/window.h" />
 		<Extensions>
 			<code_completion />
 			<debugger />

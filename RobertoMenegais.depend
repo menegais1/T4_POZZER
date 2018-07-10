@@ -139,7 +139,7 @@
 	"helpers.h"
 	"bus.h"
 
-1531152939 c:\users\dell\desktop\t4_pozzer\src\helpers.h
+1531227207 c:\users\dell\desktop\t4_pozzer\src\helpers.h
 
 1531142000 c:\users\dell\desktop\t4_pozzer\src\bus.h
 	"schedule.h"
@@ -161,14 +161,14 @@
 	"schedule.h"
 	"mpc_c.h"
 
-1531146965 source:c:\users\dell\desktop\t4_pozzer\src\helpers.cpp
+1531226477 source:c:\users\dell\desktop\t4_pozzer\src\helpers.cpp
 	<string.h>
 	<stdio.h>
 	<stdlib.h>
 	"mpc_c.h"
 	"helpers.h"
 
-1531153329 source:c:\users\dell\desktop\t4_pozzer\src\listbox.cpp
+1531225996 source:c:\users\dell\desktop\t4_pozzer\src\listbox.cpp
 	"mpc_c.h"
 	"listBox.h"
 	"helpers.h"
@@ -179,7 +179,7 @@
 	"mpc_c.h"
 	"mpc_callbacks.h"
 
-1531147403 source:c:\users\dell\desktop\t4_pozzer\src\schedule.cpp
+1531226107 source:c:\users\dell\desktop\t4_pozzer\src\schedule.cpp
 	<stdlib.h>
 	<stdio.h>
 	<string.h>
@@ -196,7 +196,7 @@
 1531142936 c:\users\dell\desktop\t4_pozzer\src\mpc_callbacks.h
 	<string>
 
-1531153918 source:c:\users\dell\desktop\t4_pozzer\src\mpc_callbacks.cpp
+1531225875 source:c:\users\dell\desktop\t4_pozzer\src\mpc_callbacks.cpp
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -206,9 +206,10 @@
 	"bus.h"
 	"controller.h"
 
-1531153715 c:\users\dell\desktop\t4_pozzer\src\controller.h
+1531227048 c:\users\dell\desktop\t4_pozzer\src\controller.h
+	"window.h"
 
-1531153705 source:c:\users\dell\desktop\t4_pozzer\src\controller.cpp
+1531227169 source:c:\users\dell\desktop\t4_pozzer\src\controller.cpp
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -219,4 +220,16 @@
 	"schedule.h"
 	"controller.h"
 	"helpers.h"
+
+1531226470 c:\users\dell\desktop\t4_pozzer\src\window.h
+	"helpers.h"
+	"bus.h"
+
+1531226542 source:c:\users\dell\desktop\t4_pozzer\src\window.cpp
+	"mpc_c.h"
+	"listBox.h"
+	"helpers.h"
+	<stdio.h>
+	<string.h>
+	"window.h"
 
